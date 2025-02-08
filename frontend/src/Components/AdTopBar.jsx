@@ -1,6 +1,6 @@
 import React from 'react'
 import '../CSS/AdTopBar.css'
-export const AdTopBar = () => {
+export const AdTopBar = ({saveInput}) => {
   return (
     <>
         <div className="admin-top-bar center">
@@ -8,7 +8,7 @@ export const AdTopBar = () => {
                <span className='page-number'>Page 1</span>
                 <div className="vertical-line"></div>
 
-                <button className='add-input-btn' >Add input</   button>
+                <button className='add-input-btn' onClick={saveInput}>save</   button>
             </div>
         </div>
     </>

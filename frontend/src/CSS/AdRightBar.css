@@ -36,16 +36,16 @@
 }
 .side-bar-input{
     font-family: 'Inter';
-font-weight: 300;
-font-size: 14px;
-color: #3D3D3D;
- width: 90%;
- margin: 0.2em auto  1em auto;
-padding:  4px 0 4px 10px;
-border-radius: 5px;
-outline: none;
-border: none;
-background-color: #D9D9D9;
+    font-weight: 300;
+    font-size: 14px;
+    color: #3D3D3D;
+    width: 90%;
+    margin: 0.2em auto  1em auto;
+    padding:  4px 0 4px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #D9D9D9;
 }
 .validation-text{
     font-family: 'Inter';
@@ -146,16 +146,21 @@ background-color: #D9D9D9;
         cursor:pointer ;
 }
 .side-bar-input-title{
-    
-font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 13px;
-line-height: 15px;
-color: #000000;
-list-style: none;
-margin-bottom: 0.5em;
-cursor: pointer;
+    border-radius: 5px;
+    padding: 5px ;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #000000;
+    list-style: none;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.side-bar-input-title:hover{
+    background-color: #838181;
 }
 .save-cancel{
     gap: 1em;

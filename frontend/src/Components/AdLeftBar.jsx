@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const AdLeftBar = () => {
+export const AdLeftBar = ({savedInputList}) => {
   return (
 
     <>
@@ -17,9 +17,13 @@ export const AdLeftBar = () => {
                 <div className="side-bar-line"></div>
                 <div className="side-bar-sub-title">Inputs</div>
                 <div className="side-bar-pages">
+                    {savedInputList.map((input,index)=>(
+                    <li className='side-bar-input-title'>{input.label}</li>
+                    )
+                    )}
+                    {/*
                     <li className='side-bar-input-title'>input title</li>
-                    <li className='side-bar-input-title'>input title</li>
-                    <li className='side-bar-input-title'>input title</li>
+                    <li className='side-bar-input-title'>input title</li> */}
                 </div>
             </div>
         </div>

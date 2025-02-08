@@ -1,28 +1,15 @@
 import React from 'react'
 import '../CSS/AdRightBar.css'
-export const AdRightBar = ({inputList,setInputList,inputFeild,setInputField,saveInput}) => {
+export const AdRightBar = ({inputList,inputFeild,setInputField,addNewInput,handleChange,handleCancel}) => {
 
-      const handleChange=(e)=>{
-         const  {name,value}=e.target
-         setInputField({...inputFeild,[name]:value})
-
-      }
+      
 
       const handleRequired =(value)=>{
           setInputField({...inputFeild,isRequired:value})
       }
       
       
-      const handleCancel=()=>{
-        setInputField({
-          type:"",
-          placeHolder:"",
-          label:"",
-          isRequired:false,
-          max:"",
-          min:""
-        })
-      }
+      
 
 
 
@@ -56,12 +43,7 @@ export const AdRightBar = ({inputList,setInputList,inputFeild,setInputField,save
                             <option value="week">Week</option>
                             <option value="time">Time</option>
                             <option value="file">File</option>
-                            <option value="image">Image</option>
-                            <option value="color">Color</option>
-                            <option value="hidden">Hidden</option>
-                            <option value="submit">Submit</option>
-                            <option value="reset">Reset</option>
-                            <option value="button">Button</option>
+                       
                     </select>
 
                     <div className="side-bar-line"></div>
@@ -87,7 +69,7 @@ export const AdRightBar = ({inputList,setInputList,inputFeild,setInputField,save
                     <div className="side-bar-line"></div>
 
                     <div className="save-cancel center">
-                      <button className="save-input-btn" onClick={saveInput}>Save</button>
+                      <button className="save-input-btn" onClick={addNewInput}>Add</button>
                       <button className="cancel-input-btn" onClick={handleCancel}>Cancel</button>
                       
                     </div>
